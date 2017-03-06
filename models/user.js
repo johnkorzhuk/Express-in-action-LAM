@@ -1,5 +1,7 @@
-import mongoose from 'mongoose'
-import bcrypt from 'bcrypt-nodejs'
+const mongoose = require('mongoose')
+const bcrypt = require('bcrypt-nodejs')
+
+mongoose.Promise = global.Promise
 
 const SALT_FACTOR = 10
 
